@@ -5,7 +5,8 @@ I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
 
-Deployed URL:
+Deployed URL: https://franklinamanda34.github.io/CodeQuiz/
+
 
 The purpose of this application is to allow a user to take a coding quiz and recieve a score at the end.
 If a question is right, you may move on to the next question with no penalty.
