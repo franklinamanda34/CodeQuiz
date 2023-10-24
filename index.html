@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+<link rel="stylesheet" href="style.css">
+    
+<title>Code Quiz</title>
+
+
+
+</head>
+<body>
+    <header>
+        <div class="scores">
+            <a id="highscores-link">View high scores</a>
+        </div>
+        <div id="timer" class="timer">
+            Time: 75
+        </div>
+    </header>
+
+    <section id="start-container" class="start-quiz">
+        <h1>Code Quiz</h1>
+    
+        <div class="controls">
+            <button id="start-btn" class="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+    <section id="question-container" class="hide">
+        <h1 id="question">What is Vanilla JavaScript?</h1>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Super Boring</button>
+            <button class="btn">Extremely Bad</button>
+            <button class="btn">Derived from the fruit of orchids <br/>
+                 in the species Vanilla</button>
+            <button class="btn">Plain Ole JavaScript</button>
+        </div>
+        <h2 id="check-answer" class="correct-wrong hide"></h2>
+        <div class="controls">
+            <button id="next-btn" class="next-btn hide">Next</button>
+        </div>
+    </section>
+
+    <section id="score-container" class="hide">
+        <form id="submit-form">
+            <h3 id="your-score"></h3>
+            <label id="initials-label">Enter your initials to save the score:</label>
+            <input type="text" id="initials-field" maxlength="3" placeholder="Enter your initials" />
+            <button id="submit-btn">Submit</button>
+        </form>
+    </section>
+
+    <section id="highscores" class="highscores-container hide">
+        <div id="high-scores">
+            <h1 class="centered">Leaderboard</h1>
+            <div id="highscore" class="highscore highscore-list">
+            </div>
+            <div class="controls">
+                <button id="restart-btn">Restart</button>
+                <button id="clear-btn">Clear Scores</button>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
