@@ -18,6 +18,22 @@ For Future development:
 Add more questions
 Add more CSS to make the application more visually appealing. 
 
+Sources:
+Stack Overflow was used heavily in aiding me thru this section in JS:
+**function loadQuestion(){
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
+questionElement.textContent = questions[currentQuestionIndex].question;
+answerButtons.innerHTML = '';
+questions[currentQuestionIndex].answers.forEach(answer => {
+const button = document.createElement('button');
+button.textContent = answer;
+button.classList.add('btn');
+button.addEventListener('click', selectAnswer);
+answerButtons.appendChild(button);
+});
+}**
+
 ![Screenshot 2023-10-23 224104](https://github.com/franklinamanda34/CodeQuiz/assets/134338964/49943246-43b8-4b33-8397-a5d0e0215122)
 ![Screenshot 2023-10-23 224141](https://github.com/franklinamanda34/CodeQuiz/assets/134338964/d0f72eec-f9f2-4af9-b8ec-8e3d9a2a5722)
 ![Screenshot 2023-10-23 224224](https://github.com/franklinamanda34/CodeQuiz/assets/134338964/8c79f704-4cf4-4951-a52a-81b06eb791a7)
